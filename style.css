@@ -24,7 +24,7 @@ main .grid {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 85.50px);
+    height: calc(100vh - 105.50px);
     overflow-y: auto;
     padding: 10px 50px;
 }
@@ -60,8 +60,9 @@ main .grid .call-attendant .name {
 /* footer */
 footer {
     background-color: #222222;
+    font-size: 1.3em;
     color: white;
-    height: 50px;
+    height: 70px;
 }
 
 footer .footer-inner {
@@ -73,3 +74,41 @@ footer .footer-inner {
     height: 100%
 }
 
+footer .footer-inner .footer-left, .footer-center {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+footer .footer-inner .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-inner .icons .icons-text, .fa-angle-up{
+    padding: 5px;
+    font-size: .5em;
+}
+
+footer .footer-inner .icons #share-screen {
+    color: #4bc800;
+}
+
+footer .footer-inner .icons i {
+    cursor: pointer;
+}
+
+footer .footer-inner .footer-right button {
+    background-color: #4a4a4a;
+    color: red;
+    font-size: .5em;
+    font-weight: bold;
+    border: none;
+
+    height: 70px;
+    padding: 0 20px;
+
+    cursor: pointer;
+}
